@@ -7,8 +7,12 @@ body{
 
 header{
     width: 100%;
-    height: 50px;
-    position: relative;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 1;
 }
 
 header div{
@@ -54,8 +58,8 @@ header .nav ul li a:hover{
     color: #7f97ff;
 }
 
-/* Section one */
-section{
+/* About me section start */
+.about-me{
     background-color: #f9f9ff;
     width: 100%;
     height: 750px;
@@ -64,27 +68,27 @@ section{
     justify-content: space-between;
 }
 
-.left-half, .right-half{
+.about-me .left-half, .right-half{
     width: 50%;
 }
 
-.left-half{
+.about-me .left-half{
     margin: 0 0 120px 230px;
 }
 
-.left-half h3{
+.about-me .left-half h3{
     font-weight: normal;
 }
 
-.left-half h1{
+.about-me .left-half h1{
     font-size: 60px;
 }
 
-.left-half p{
+.about-me .left-half p{
     color: rgba(78, 78, 78,0.7);
 }
 
-.left-half input{
+.about-me .left-half input{
    padding: 10px 20px;
    background-color: #8393FF;
    text-transform: uppercase;
@@ -94,17 +98,319 @@ section{
    font-size: 15px;
 }
 
-.left-half input:hover{
+.about-me .left-half input:hover{
     box-shadow: 5px 10px 30px rgba(130,147,255, 0.5);
     transition: all 0.5s ease-in 0.1s;
     outline: none;
 }
 
-.right-half{
+.about-me .right-half{
     padding-right: 160px;
 }
 
-.right-half img{
+.about-me .right-half img{
     max-width: 100%;
     height: auto;
  }
+
+/* About me section end */
+
+/* Personal details section start */
+.personal-details{
+    width: 100%;
+    height: 620px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal-details div{
+   width: 40%;
+   margin: 0 auto;
+}
+
+.personal-details img{
+    height: auto;
+    width: 90%;
+}
+.personal-details .man2-image{
+    padding-left: 150px;
+}
+
+.personal-details .text-portion h3{ 
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.personal-details .text-portion h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.personal-details .text-portion p{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    width: 80%;
+}
+
+.personal-details button{
+    background-color: #8293FF;
+    color: white;
+    height: 46px;
+    width: 36%;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 0px 13px;
+}
+
+.personal-details button:hover{
+     box-shadow: 5px 10px 30px rgba(130,147,255, 0.5);
+    transition: all 0.5s ease-in 0.1s;
+    outline: none;
+}
+
+/* Personal details section end */
+
+/* Service Section Start  */
+.offerd-services{
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.services-title h1{
+    font-size: 40px;
+    line-height: 10px;
+}
+
+.services-title p{
+    width: 670px;
+    color: rgb(0,0,0,0.6);
+    margin: 0 auto;
+}
+
+.services{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+.services .service1, .service2{
+    width: 100%;
+    overflow: hidden;
+}
+
+.services .service1 div, .service2 div{
+    width: 32%;
+    float: left;
+    padding: 5px;
+    
+}
+
+.services .service2{
+    padding-top: 10px;
+}
+
+.services i {
+    font-size: 45px;
+    color: rgb(0,0,0,0.7);
+}
+
+.services h1{
+      color: rgb(0,0,0,0.9);
+}
+
+.services p{
+      color: rgb(0,0,0,0.6);
+}
+
+.service1 .web-design:hover h1{
+    color: #8293FF;
+   
+}
+
+.service1 .web-design:hover i{
+    color: #8293FF;
+   
+}
+
+.service1 .web-devlopment:hover h1{
+    color: #8293FF;
+   
+}
+
+.service1 .web-devlopment:hover i{
+    color: #8293FF;
+   
+}
+
+.service1 .photography:hover h1{
+    color: #8293FF;
+   
+}
+
+.service1 .photography:hover i{
+    color: #8293FF;
+   
+}
+
+.service2 .app-devlopment:hover h1{
+    color: #8293FF;
+   
+}
+
+.service2 .app-devlopment:hover i{
+    color: #8293FF;
+   
+}
+
+
+.service2 .graphics-design:hover h1{
+    color: #8293FF;
+   
+}
+
+.service2 .graphics-design:hover i{
+    color: #8293FF;
+   
+}
+
+.service2 .digital-marketing:hover h1{
+    color: #8293FF;
+   
+}
+
+.service2 .digital-marketing:hover i{
+    color: #8293FF;
+   
+}
+
+/* Service Section End  */
+
+
+/*  Project Completation Section Start */
+ 
+.project-completation{
+    width: 100%;
+    height: 300px;
+    background-color: #8293FF;
+   
+}
+
+.project-completation div{
+    float: left;
+    width: 20%;
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+.project-completation h1 {
+    color: white;
+}
+
+.project-completation p {
+    color: white;
+}
+
+.project-completation h1{
+    font-size: 40px;
+    line-height: 0px;
+}
+
+.project-completation p{
+    font-size: 17px;
+}
+
+/* Project Completation Section End */
+
+
+/* Latest Feature Start */
+ .latest-feature{
+    width: 100%;
+    height: 600px;
+    margin-top: 100px;
+ }
+
+.latest-feature .latest-feature-title{
+     text-align: center;
+ }
+
+.latest-feature .latest-feature-title h1{
+    font-size: 40px;
+    color: rgb(0,0,0,0.9);
+ }
+
+.latest-feature .latest-feature-title p{
+    color: rgb(0,0,0,0.7);
+    margin-top: -18px;
+ }
+
+.latest-feature .latest-feature-image{
+      margin-top: 80px;
+}
+
+.latest-feature .latest-feature-image .latest-feature-image-option{
+    width: 30%;
+    margin: 0 auto;
+ }
+
+.latest-feature .latest-feature-image .latest-feature-image-option ul {
+         list-style-type: none;
+ }
+
+.latest-feature .latest-feature-image .latest-feature-image-option ul li{
+    display: inline-block;
+    padding: 10px 17px;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.latest-feature .latest-feature-image .latest-feature-all-images{
+     width: 75%;
+     margin: 0 auto;
+     justify-content: space-around;
+     height: auto;
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 40px;
+}
+
+.latest-feature .latest-feature-image .latest-feature-all-images div{
+     width: 340px;
+     height: 339px;
+     padding-bottom: 90px;
+     text-align: center;
+}
+
+.latest-feature .latest-feature-image .latest-feature-all-images h1{
+   font-size: 20px;
+   color: rgb(0,0,0,0.9);
+} 
+
+.latest-feature .latest-feature-image .latest-feature-all-images p{
+      color: rgb(0,0,0,0.9);
+}
+
+.latest-feature .latest-feature-image .latest-feature-all-images figure{
+    background: linear-gradient(40deg, #8490ff 40%, #62bdfc 100%); 
+     width: 340px;
+     height: 339px;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     border-radius: 3%;
+}
+
+.latest-feature .latest-feature-image .latest-feature-all-images figure:hover img{
+    opacity: 0.3;
+    transition: all .3s ease-in-out;
+}
+
+
+/* Latest Feature End  */
